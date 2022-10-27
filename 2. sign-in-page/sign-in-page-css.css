@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+body{
+    background-image: url("../1. landing-pages/landing-pages-images/netflix_landingPage_image.jpg");
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#blackBackground{
+    margin: 0%;
+    color: #ffffff;
+    background-color: #333333;
+    opacity: 75%;
+}
+
+#container{
+    background-color: #000000;
+    opacity: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0%;
+}
+
+#netflixLogo{
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#signInInformation{
+    margin-top: 10%;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 480px;
+    max-width: 100%;
+    font-weight: bold;
+    /*position: absolute;*/
+   /* overflow: hidden;*/
+}
+
+a {
+    background-color: #e50914;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color:#ffffff
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--My CSS link-->
+    <link rel="stylesheet" href="../3. netflix-body/main.css">
+
+    <!--Google fonts CSS links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!--Bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--My JS link-->
+    <script src="main.js" defer></script>
+    <title>NETFLIX CLONE</title>
+</head>
+
+
+
+<body>
+    <!--Bootstrap nav-bar-->
+    <div id="navigate">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img class="logo" src="../1. landing-pages/landing-pages-images/Logonetflix.png" alt="netlfixLogo">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#body">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#comingSoon">Coming Soon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#myList">My List</a>
+                    </li>
+                </ul>
+                <form action="main.html" method="get" class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#wishlist">Wishlist</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--The big picture at the top of the page-->
+    <div id="firstImageContainer">
+        <!--<b><h1>DERRY GIRLS</h1> <h3>Season 3</h3></b>-->
+        <!--<video 
+      controls
+      src="https://www.youtube.com/embed/ddA0Vh5v0LM"
+      poster="netflix-body-images/Derry_girls.jpg"
+      width="100%"
+      height="850px"
+      
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>-->
+
+
+
+
+
+        <!--in this version the video works but styling is an issue unlike previous veriosn where styling worked bu the video did not-->
+        <iframe width="100%" height="850" src="https://www.youtube.com/embed/ddA0Vh5v0LM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <div id="body">
+
+
+
+        <!--The first list ("My List")coded in HTML-->
+        <section>
+            <h4 id="myList">My List </h4>
+            <div id="carousel">
+                <button class="carouselButtonPrev">&#60;</button>
+                <button class="carouselButtonNext">&#62;</button>
+                <ul id="imgList">
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/alchemy of souls.jpg" alt="alchemyOfSouls">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/big mouth.jpg" alt="bigMouth">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/bling empire.jpg" alt="blingEmpire">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/dahmer.jpg" alt="dahmer">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/dated and related.jpg" alt="datedAndRelated">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/emily in pais.jpg" alt="emilyInParis">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/derry girls.jpg" alt="derryGirls">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/entergalactic.jpg" alt="entergalactic">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/bridgerton.jpg" alt="bridgerton">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/good girls.jpg" alt="goodGirls">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/invening anna.jpg" alt="inventingAnna">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/who is the mole.jpg" alt="whoIsTheMole">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/the sandman.jpg" alt="theSandman">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/the crown.jpg" alt="theCrown">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/stranger things.jpg" alt="strangerThings">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Since the Javascript isn't co-operating these are more image slides in HTML-->
+
+       <section>
+            <h4 id="comingSoon">Coming Soon </h4>
+            <div id="carousel">
+                <button class="carouselButtonPrev">&#60;</button>
+                <button class="carouselButtonNext">&#62;</button>
+                <ul id="imgList">
+                    <li class="slide" data-active>
+                           <img class="img" src="netflix-body-images/scrollable_images/big mouth.jpg" alt="bigMouth">
+                    </li>
+                    <li class="slide" data-active>
+                        <img class="img" src="netflix-body-images/scrollable_images/alchemy of souls.jpg" alt="alchemyOfSouls">
+                            
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/bridgerton.jpg" alt="bridgerton">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/mo.jpg" alt="mo">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/wild croc territory.jpg" alt="wildCrocTerritory">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/iliza hot forever.jpg" alt="ilizaHotForever">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/derry girls.jpg" alt="derryGirls">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/designing miami.jpg" alt="designingMiami">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/emily in pais.jpg" alt="emilyInParis">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/the watcher 1.jpg" alt="theWatcher">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/indian matchmaking.jpg" alt="indianMatchmaking">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/who is the mole.jpg" alt="whoIsTheMole">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/luckiest girl alive 1.jpg" alt="LuckiestGirlAlive">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/the crown.jpg" alt="theCrown">
+                    </li>
+                    <li class="slide" data-active>
+                            <img class="img" src="netflix-body-images/scrollable_images/sabrina.jpg" alt="sabrina">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h4 id="wishlist"> Wishlist </h4>
+            <div id="wishlistCarousel">
+                <button class="carouselButtonPrev">&#60;</button>
+                <button class="carouselButtonNext">&#62;</button>
+                <ul id="wishImgList">
+                    <!--<li class="slide" data-active>
+                           <img class="img" src="netflix-body-images/scrollable_images/big mouth.jpg" alt="bigMouth">
+                            
+                    </li>-->
+                </ul>
+            </div>
+        </section>
+
+        <!--<div id="videoDiv">
+            <video class="hoverVideo" controls 
+            src="netflix-body-video/hd0029_preview.mp4" 
+            width="350px" height="200px" muted autoplay loop></video>
+            <button class="wishlist" style="border-radius: 1;">&#10003;</button>
+        </div>-->
+    </div>
+
+    
+
+    <!--Bootstrap JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
